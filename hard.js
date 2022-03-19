@@ -19,25 +19,39 @@
 // strDegree = String(degree)
 // console.log(strDegree[0], strDegree[1])
 
-// let leng = confirm('Язык русский или нет?');
+let lang = confirm('Язык русский или нет?');
 
-// console.log(leng)
+console.log(lang)
 
-// if (leng == true){
-//   console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
-// }
-// else{
-//   console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
-// }
+if (lang == true){
+  console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+}
+else{
+  console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
+}
 
-let namePerson = prompt('введите имя');
+switch (lang) {
+  case true:
+    console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+    break;
+  case false:
+    console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
+    break;
+  default:
+    console.log('это как? язык надо выбрать');
+}
 
-console.log(namePerson)
+lang == true ? console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье') : console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
 
-namePerson == 'артем' ? console.log('директор') : 
-namePerson == 'Артем' ? console.log('директор') : 
-namePerson == 'александр' ? console.log('преподаватель') : 
-namePerson == 'Александр' ? console.log('преподаватель') : 
-  console.log('студент');
+
+// let namePerson = prompt('введите имя');
+
+// console.log(namePerson)
+
+// namePerson == 'артем' ? console.log('директор') : 
+// namePerson == 'Артем' ? console.log('директор') : 
+// namePerson == 'александр' ? console.log('преподаватель') : 
+// namePerson == 'Александр' ? console.log('преподаватель') : 
+//   console.log('студент');
 
           // console.log(result)

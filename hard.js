@@ -55,5 +55,3 @@ namePerson == 'Артем' ? console.log('директор') :
 namePerson == 'александр' ? console.log('преподаватель') : 
 namePerson == 'Александр' ? console.log('преподаватель') : 
   console.log('студент');
-
-          console.log(result)

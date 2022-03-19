@@ -44,14 +44,16 @@ switch (lang) {
 lang == true ? console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье') : console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
 
 
-// let namePerson = prompt('введите имя');
+//задание с именамт
 
-// console.log(namePerson)
+let namePerson = prompt('введите имя');
 
-// namePerson == 'артем' ? console.log('директор') : 
-// namePerson == 'Артем' ? console.log('директор') : 
-// namePerson == 'александр' ? console.log('преподаватель') : 
-// namePerson == 'Александр' ? console.log('преподаватель') : 
-//   console.log('студент');
+console.log(namePerson)
 
-          // console.log(result)
+namePerson == 'артем' ? console.log('директор') : 
+namePerson == 'Артем' ? console.log('директор') : 
+namePerson == 'александр' ? console.log('преподаватель') : 
+namePerson == 'Александр' ? console.log('преподаватель') : 
+  console.log('студент');
+
+          console.log(result)

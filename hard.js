@@ -19,13 +19,25 @@
 // strDegree = String(degree)
 // console.log(strDegree[0], strDegree[1])
 
-let leng = confirm('Язык русский или нет?');
+// let leng = confirm('Язык русский или нет?');
 
-console.log(leng)
+// console.log(leng)
 
-if (leng == true){
-  console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
-}
-else{
-  console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
-}
+// if (leng == true){
+//   console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+// }
+// else{
+//   console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
+// }
+
+let namePerson = prompt('введите имя');
+
+console.log(namePerson)
+
+namePerson == 'артем' ? console.log('директор') : 
+namePerson == 'Артем' ? console.log('директор') : 
+namePerson == 'александр' ? console.log('преподаватель') : 
+namePerson == 'Александр' ? console.log('преподаватель') : 
+  console.log('студент');
+
+          // console.log(result)

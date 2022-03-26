@@ -1,26 +1,31 @@
 'use strict'
 
-// 1
+// let arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресеньн'];
+ 
+//         for (let i = 0; i < arr.length; i++) {
+//             if (i > 4) {
+//                 document.body.insertAdjacentHTML('beforeend', '<b>' + arr[i] + '</b>' + ' ');
+//             } else {
+//                 document.body.insertAdjacentHTML('beforeend', arr[i] + ' ');
+//             }
+//         }
 
-let arr = ['12345', '23412', '32312', '44561', '22344', '67888', '455'];
+let week = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+const now = new Date();
 
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i].startsWith('2') || arr[i].startsWith('4')) {
-        console.log(arr[i]);
-    } else {
-        console.log('Число не начинается с числа 2 или 4');
-    }
-}
-
-// 2
-
-
-nextPrime:
-for (let i = 2; i <= 100; i++) {
-
-  for (let j = 2; j < i; j++) {
-    if (i % j == 0) continue nextPrime;
+const days = function() {
+for (let i = 0; i < week.length; i++) {
+  if (i === +now.getDay()-1) { 
+    document.write(week[i].bold() + '<br>');
+  } else if(week.id > 4) {
+    document.write(week[i].italics() + '<br>');
   }
-
-  console.log(i, '  - простое число, ', 'делится на 1 и на: ', i)
+  else {
+    document.write(week[i] + '<br>');
+  }
 }
+}
+
+console.log(now)
+console.log(week)
+days()
